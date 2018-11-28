@@ -1,0 +1,2 @@
+#! /bin/sh
+exec '/srv/jenkins/workspace/SDK-GEN/output-B288/host/usr/bin/bison' -y "$@"

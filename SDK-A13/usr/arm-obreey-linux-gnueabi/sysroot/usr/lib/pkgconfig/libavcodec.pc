@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.89.100
+Requires: 
+Requires.private: libswresample >= 2.7.100, libavutil >= 55.58.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -lasound -L/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr/arm-obreey-linux-gnueabi/sysroot/usr//lib -lssl -lcrypto -L/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr/arm-obreey-linux-gnueabi/sysroot/usr/lib -lopus -L/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr/arm-obreey-linux-gnueabi/sysroot/usr/lib -lopencv_calib3d -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_highgui -lopencv_imgproc -lopencv_objdetect -lopencv_photo -lopencv_video -lmp3lame -L/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr/arm-obreey-linux-gnueabi/sysroot/usr/lib -lfreetype -L/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr/arm-obreey-linux-gnueabi/sysroot/usr/lib -lfontconfig -lfreetype -lm -lbz2 -lz -pthread -latomic
+Cflags: -I${includedir}

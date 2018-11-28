@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libkms
+Description: Library that abstract aways the different mm interface for kernel drivers
+Version: 1.0.0
+Libs: -L${libdir} -lkms
+Cflags: -I${includedir}/libkms
+Requires.private: libdrm

@@ -1,0 +1,9 @@
+#!/bin/bash
+#PKG_CONFIG_LIBDIR=${PKG_CONFIG_LIBDIR:-/home/igor/buildroot-2017.05/output/host/usr/arm-obreey-linux-gnueabi/sysroot/usr/lib/pkgconfig:/home/igor/buildroot-2017.05/output/host/usr/arm-obreey-linux-gnueabi/sysroot/usr/share/pkgconfig} PKG_CONFIG_SYSROOT_DIR=${PKG_CONFIG_SYSROOT_DIR:-/home/igor/buildroot-2017.05/output/host/usr/arm-obreey-linux-gnueabi/sysroot} $(dirname $0)/pkgconf  $@
+[ -z "${PKG_CONFIG_LIBDIR}" ] && PKG_CONFIG_LIBDIR="$(dirname $0)/../arm-obreey-linux-gnueabi/sysroot/usr/lib/pkgconfig"
+[ -z "${PKG_CONFIG_SYSROOT_DIR}" ] && PKG_CONFIG_SYSROOT_DIR="$(dirname $0)/../arm-obreey-linux-gnueabi/sysroot/"
+export PKG_CONFIG_LIBDIR
+export PKG_CONFIG_SYSROOT_DIR
+#echo "$0: run $(dirname $0)/pkgconf $@" >&2
+exec $(dirname $0)/pkgconf  $@
+

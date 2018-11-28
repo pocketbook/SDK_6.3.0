@@ -1,9 +1,14 @@
 # SDK_6.3.0
 
-```
-Dear customer!
+You just need to run: 
 
-Please find SDK for your firmware version in appropriate branch!
+```bash
+$SDK_ROOT_DIR/bin/update_path.sh
+```
+...and CMAKE_TOOLCHAIN_FILE files for your own builds are will be availible in:
+
+```bash
+$SDK_ROOT_DIR/share/cmake
+```
 
 enjoy PocketBook and have fun! ;)
-```

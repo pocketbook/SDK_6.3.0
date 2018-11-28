@@ -1,0 +1,20 @@
+prefix=/srv/jenkins/workspace/SDK-GEN/output-iMX6/host/usr
+exec_prefix=${prefix}
+bindir=${exec_prefix}/bin
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+system_bus_default_address=unix:path=/srv/jenkins/workspace/SDK-GEN/output-iMX6/host/var/run/dbus/system_bus_socket
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+sysconfdir=/srv/jenkins/workspace/SDK-GEN/output-iMX6/host/etc
+session_bus_services_dir=${datadir}/dbus-1/services
+system_bus_services_dir=${datadir}/dbus-1/system-services
+interfaces_dir=${datadir}/dbus-1/interfaces
+daemondir=$bindir
+
+Name: dbus
+Description: Free desktop message bus
+Version: 1.10.18
+Libs: -L${libdir} -ldbus-1
+Libs.private: -lpthread    
+Cflags: -I${includedir}/dbus-1.0 -I${libdir}/dbus-1.0/include 

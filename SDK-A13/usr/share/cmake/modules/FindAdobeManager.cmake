@@ -1,0 +1,36 @@
+# -*- cmake -*-
+
+# - Find AdobeManager library
+# Find the AdobeManager includes and library
+# This module defines
+# ADOBE_MANAGER_INCLUDE_DIR, where to find json.h, etc.
+# ADOBE_MANAGER_LIBRARIES, the libraries needed to use jsoncpp.
+# ADOBE_MANAGER_FOUND, If false, do not try to use jsoncpp.
+
+FIND_PATH(ADOBE_MANAGER_INCLUDE_DIR inkview.h
+/include
+/usr/include
+/usr/local/include
+)
+
+FIND_LIBRARY(ADOBE_MANAGER_LIBRARIES
+  NAMES libadobe_manager.so
+  PATHS /lib /usr/lib /usr/local/lib
+)
+
+IF (ADOBE_MANAGER_LIBRARIES AND ADOBE_MANAGER_INCLUDE_DIR)
+  SET(ADOBE_MANAGER_FOUND "YES")
+ELSE (ADOBE_MANAGER_LIBRARIES AND ADOBE_MANAGER_INCLUDE_DIR)
+  SET(ADOBE_MANAGER_FOUND "NO")
+ENDIF (ADOBE_MANAGER_LIBRARIES AND ADOBE_MANAGER_INCLUDE_DIR)
+
+
+IF (ADOBE_MANAGER_FOUND)
+  IF (NOT ADOBE_MANAGER_FIND_QUIETLY)
+    MESSAGE(STATUS "Found Inkview: ${ADOBE_MANAGER_LIBRARIES}")
+  ENDIF (NOT ADOBE_MANAGER_FIND_QUIETLY)
+ELSE (ADOBE_MANAGER_FOUND)
+  IF (ADOBE_MANAGER_FIND_REQUIRED)
+    MESSAGE(FATAL_ERROR "Could not find Inkview library")
+  ENDIF (ADOBE_MANAGER_FIND_REQUIRED)
+ENDIF (ADOBE_MANAGER_FOUND)

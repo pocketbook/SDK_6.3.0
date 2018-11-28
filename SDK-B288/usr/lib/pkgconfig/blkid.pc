@@ -1,0 +1,11 @@
+prefix=/srv/jenkins/workspace/SDK-GEN/output-B288/host/usr
+exec_prefix=/srv/jenkins/workspace/SDK-GEN/output-B288/host/usr
+libdir=/srv/jenkins/workspace/SDK-GEN/output-B288/host/usr/lib
+includedir=/srv/jenkins/workspace/SDK-GEN/output-B288/host/usr/include
+
+Name: blkid
+Description: Block device id library
+Version: 2.29.2
+Requires.private: uuid
+Cflags: -I${includedir}/blkid
+Libs: -L${libdir} -lblkid

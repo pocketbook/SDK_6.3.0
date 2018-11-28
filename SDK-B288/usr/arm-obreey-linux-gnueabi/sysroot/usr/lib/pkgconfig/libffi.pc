@@ -1,0 +1,9 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+toolexeclibdir=${exec_prefix}/lib
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.2.1
+Libs: -L${toolexeclibdir} -lffi

@@ -1,0 +1,11 @@
+prefix=/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr
+exec_prefix=/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr
+libdir=/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr/lib
+includedir=/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr/include
+
+Name: mount
+Description: mount library
+Version: 2.29.2
+Requires.private: blkid
+Cflags: -I${includedir}/libmount
+Libs: -L${libdir} -lmount

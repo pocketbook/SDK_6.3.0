@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: egl
+Description: Mesa EGL library
+Requires.private: 
+Version: 11.1.2
+Libs: -L${libdir} -lEGL
+Libs.private: 
+Cflags: -I${includedir}  -DMESA_EGL_NO_X11_HEADERS

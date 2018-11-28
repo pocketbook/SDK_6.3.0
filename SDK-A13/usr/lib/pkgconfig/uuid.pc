@@ -1,0 +1,11 @@
+prefix=/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr
+exec_prefix=/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr
+libdir=/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr/lib
+includedir=/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.29.2
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

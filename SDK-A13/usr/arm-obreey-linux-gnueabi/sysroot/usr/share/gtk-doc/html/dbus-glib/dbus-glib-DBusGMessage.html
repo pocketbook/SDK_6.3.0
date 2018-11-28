@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>DBusGMessage: D-Bus GLib bindings - Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="D-Bus GLib bindings - Reference Manual">
+<link rel="up" href="ch02.html" title="API Reference">
+<link rel="prev" href="dbus-glib-DBus-GObject-related-functions.html" title="DBus GObject related functions">
+<link rel="next" href="dbus-glib-DBusGMethod.html" title="DBusGMethod">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#dbus-glib-DBusGMessage.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="dbus-glib-DBus-GObject-related-functions.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="dbus-glib-DBusGMethod.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="dbus-glib-DBusGMessage"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="dbus-glib-DBusGMessage.top_of_page"></a>DBusGMessage</span></h2>
+<p>DBusGMessage — DBus Message</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="dbus-glib-DBusGMessage.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Stable"><span class="acronym">Stable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="dbus-glib-DBusGMessage.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="returnvalue">DBusGMessage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="dbus-glib-DBusGMessage.html#dbus-g-message-ref" title="dbus_g_message_ref ()">dbus_g_message_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="dbus-glib-DBusGMessage.html#dbus-g-message-unref" title="dbus_g_message_unref ()">dbus_g_message_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">DBusMessage</span> *
+</td>
+<td class="function_name">
+<a class="link" href="dbus-glib-DBusGMessage.html#dbus-g-message-get-message" title="dbus_g_message_get_message ()">dbus_g_message_get_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="dbus-glib-DBusGMessage.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage">DBusGMessage</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="dbus-glib-DBusGMessage.html#DBUS-TYPE-G-MESSAGE:CAPS" title="DBUS_TYPE_G_MESSAGE">DBUS_TYPE_G_MESSAGE</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="dbus-glib-DBusGMessage.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;dbus/dbus-glib.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="dbus-glib-DBusGMessage.description"></a><h2>Description</h2>
+<p>A <a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="type">DBusGMessage</span></a> is a boxed type abstracting a DBusMessage.</p>
+</div>
+<div class="refsect1">
+<a name="dbus-glib-DBusGMessage.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="dbus-g-message-ref"></a><h3>dbus_g_message_ref ()</h3>
+<pre class="programlisting"><a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="returnvalue">DBusGMessage</span></a> *
+dbus_g_message_ref (<em class="parameter"><code><a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="type">DBusGMessage</span></a> *message</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">dbus_g_message_ref</code> is deprecated and should not be used in newly-written code.</p>
+<p>New code should use <a href="https://developer.gnome.org/gio/unstable/GDBusMessage.html#GDBusMessage-struct"><span class="type">GDBusMessage</span></a> instead.</p>
+</div>
+<p>Increment refcount on a <a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="type">DBusGMessage</span></a></p>
+<div class="refsect3">
+<a name="dbus-g-message-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>the message to ref</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="dbus-g-message-ref.returns"></a><h4>Returns</h4>
+<p> the message that was ref'd</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="dbus-g-message-unref"></a><h3>dbus_g_message_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+dbus_g_message_unref (<em class="parameter"><code><a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="type">DBusGMessage</span></a> *message</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">dbus_g_message_unref</code> is deprecated and should not be used in newly-written code.</p>
+<p>New code should use <a href="https://developer.gnome.org/gio/unstable/GDBusMessage.html#GDBusMessage-struct"><span class="type">GDBusMessage</span></a> instead.</p>
+</div>
+<p>Decrement refcount on a <a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="type">DBusGMessage</span></a></p>
+<div class="refsect3">
+<a name="dbus-g-message-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>the message to unref</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="dbus-g-message-get-message"></a><h3>dbus_g_message_get_message ()</h3>
+<pre class="programlisting"><span class="returnvalue">DBusMessage</span> *
+dbus_g_message_get_message (<em class="parameter"><code><a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="type">DBusGMessage</span></a> *gmessage</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">dbus_g_message_get_message</code> is deprecated and should not be used in newly-written code.</p>
+<p>New code should use GDBus instead.</p>
+</div>
+<p>Get the <span class="type">DBusMessage</span> corresponding to this <a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="type">DBusGMessage</span></a>.
+The return value does not have its refcount incremented.</p>
+<div class="refsect3">
+<a name="dbus-g-message-get-message.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gmessage</p></td>
+<td class="parameter_description"><p>a <a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="type">DBusGMessage</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="dbus-g-message-get-message.returns"></a><h4>Returns</h4>
+<p> <span class="type">DBusMessage</span> </p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="dbus-glib-DBusGMessage.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="DBusGMessage"></a><h3>DBusGMessage</h3>
+<pre class="programlisting">typedef struct _DBusGMessage DBusGMessage;</pre>
+<div class="warning">
+<p><code class="literal">DBusGMessage</code> is deprecated and should not be used in newly-written code.</p>
+<p>New code should use <a href="https://developer.gnome.org/gio/unstable/GDBusMessage.html#GDBusMessage-struct"><span class="type">GDBusMessage</span></a> instead.</p>
+</div>
+<p>A <a class="link" href="dbus-glib-DBusGMessage.html#DBusGMessage" title="DBusGMessage"><span class="type">DBusGMessage</span></a> is a boxed type abstracting a DBusMessage from
+libdbus.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="DBUS-TYPE-G-MESSAGE:CAPS"></a><h3>DBUS_TYPE_G_MESSAGE</h3>
+<pre class="programlisting">#define DBUS_TYPE_G_MESSAGE      (dbus_g_message_get_g_type ())
+</pre>
+<div class="warning">
+<p><code class="literal">DBUS_TYPE_G_MESSAGE</code> is deprecated and should not be used in newly-written code.</p>
+<p>New code should use GDBus instead.</p>
+</div>
+<p>Expands to a function call returning the boxed <a href="https://developer.gnome.org/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of a <a class="link" href="dbus-glib-DBusGConnection.html#DBusGConnection" title="DBusGConnection"><span class="type">DBusGConnection</span></a>.</p>
+<div class="refsect3">
+<a name="DBUS-TYPE-G-MESSAGE.returns"></a><h4>Returns</h4>
+<p> the GLib type</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="dbus-glib-DBusGMessage.see-also"></a><h2>See Also</h2>
+<p><span class="type">DBusMessage</span></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

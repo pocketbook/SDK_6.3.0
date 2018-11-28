@@ -1,0 +1,59 @@
+# -*- cmake -*-
+
+# - Find PBCloud library
+# Find the PBCloud includes and library
+# This module defines
+# PBCLOUD_INCLUDE_DIR, where to find json.h, etc.
+# PBCLOUD_LIBRARIES, the libraries needed to use jsoncpp.
+# PBCLOUD_FOUND, If false, do not try to use jsoncpp.
+
+FIND_LIBRARY(PBCLOUD_LIBRARIES
+  NAMES libpbcloud.so
+  PATHS /lib /usr/lib /usr/local/lib
+) 
+
+IF (PBCLOUD_LIBRARIES)
+  SET(PBCLOUD_FOUND "YES")
+ELSE (PBCLOUD_LIBRARIES)
+  SET(PBCLOUD_FOUND "NO")
+ENDIF (PBCLOUD_LIBRARIES)
+
+IF (PBCLOUD_FOUND)
+  IF (NOT PBCLOUD_FIND_QUIETLY)
+    MESSAGE(STATUS "Found PBCloud: ${PBCLOUD_LIBRARIES}")
+
+    # PBCloud api
+    FIND_PATH(PBCLOUD_API_INCLUDE_DIR pbcloud_api.h
+      /include
+      /usr/include
+      /usr/local/include
+      )
+    
+    FIND_LIBRARY(PBCLOUD_API_LIBRARIES
+      NAMES libpbcloud_api.so
+      PATHS /lib /usr/lib /usr/local/lib
+    ) 
+
+    IF (PBCLOUD_API_LIBRARIES AND PBCLOUD_API_INCLUDE_DIR)
+      SET(PBCLOUD_API_FOUND "YES")
+    ELSE (PBCLOUD_API_LIBRARIES AND PBCLOUD_API_INCLUDE_DIR)
+      SET(PBCLOUD_API_FOUND "NO")
+    ENDIF (PBCLOUD_API_LIBRARIES AND PBCLOUD_API_INCLUDE_DIR)
+
+    IF (PBCLOUD_API_FOUND)
+      IF (NOT PBCLOUD_API_FIND_QUIETLY)
+        MESSAGE(STATUS "Found PBCloud api: ${PBCLOUD_API_LIBRARIES}")
+      ENDIF (NOT PBCLOUD_API_FIND_QUIETLY)
+    ELSE (PBCLOUD_API_FOUND)
+      IF (PBCLOUD_API_FIND_REQUIRED)
+        MESSAGE(FATAL_ERROR "Could not find PBCloud api library")
+      ENDIF (PBCLOUD_API_FIND_REQUIRED)
+    ENDIF (PBCLOUD_API_FOUND)
+
+  ENDIF (NOT PBCLOUD_FIND_QUIETLY)
+ELSE (PBCLOUD_FOUND)
+  IF (PBCLOUD_FIND_REQUIRED)
+    MESSAGE(FATAL_ERROR "Could not find PBCloud library")
+  ENDIF (PBCLOUD_FIND_REQUIRED)
+ENDIF (PBCLOUD_FOUND)
+

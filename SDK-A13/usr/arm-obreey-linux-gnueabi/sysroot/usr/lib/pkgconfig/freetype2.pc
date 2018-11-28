@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 19.0.13
+Requires:
+Requires.private: zlib
+Libs: -L${libdir} -lfreetype
+Libs.private: -lpng12 -lbz2 -L/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr/arm-obreey-linux-gnueabi/sysroot/usr/lib -lpng12
+Cflags: -I${includedir}/freetype2

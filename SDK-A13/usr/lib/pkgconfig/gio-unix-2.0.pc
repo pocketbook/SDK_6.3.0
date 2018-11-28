@@ -1,0 +1,11 @@
+prefix=/srv/jenkins/workspace/SDK-GEN/output-A13/host/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: GIO unix specific APIs
+Description: unix specific headers for glib I/O library
+Version: 2.50.3
+Requires: gobject-2.0,gio-2.0
+Libs: -L${libdir} -lgio-2.0
+Cflags: -I${includedir}/gio-unix-2.0/
