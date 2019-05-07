@@ -12,6 +12,7 @@
 FIND_PATH(JSONCPP_INCLUDE_DIR json/json.h
 /usr/local/include
 /usr/include
+/usr/include/jsoncpp
 )
 
 # Get the GCC compiler version
