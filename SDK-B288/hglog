@@ -1,0 +1,521 @@
+changeset:   99:a58477e4a5e1
+tag:         tip
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Thu Aug 06 17:38:31 2020 +0300
+summary:     enable-fts5 in sqlite3
+
+changeset:   98:75b332f4ad67
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Jun 19 14:09:52 2020 +0300
+summary:     Fix pbres source
+
+changeset:   97:1ce9995d6af2
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Jun 19 12:14:03 2020 +0300
+summary:     Fix suffix for default branch
+
+changeset:   96:b04c7cd90810
+parent:      92:91fa49e3b657
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Jun 19 11:12:47 2020 +0300
+summary:     Change upload scheme
+
+changeset:   95:11e7007a3b2a
+branch:      5.x
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Jun 19 11:12:47 2020 +0300
+summary:     Change upload scheme
+
+changeset:   94:818b70e20db5
+branch:      5.x
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Jun 19 08:39:07 2020 +0300
+summary:     Upload file list
+
+changeset:   93:4425167aa881
+branch:      5.x
+parent:      91:ed1a75669d51
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Jun 19 08:23:53 2020 +0300
+summary:     Buid pbres by fixed revision
+
+changeset:   92:91fa49e3b657
+parent:      89:21003182f331
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Jun 19 08:06:24 2020 +0300
+summary:     Build pbres by tip
+
+changeset:   91:ed1a75669d51
+branch:      5.x
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Jun 19 07:57:41 2020 +0300
+summary:     Build pbres by tag 5.x
+
+changeset:   90:bba41576cbcf
+branch:      5.x
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Jun 19 07:54:01 2020 +0300
+summary:     Build pbres by tag
+
+changeset:   89:21003182f331
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Jun 19 07:49:57 2020 +0300
+summary:     pack SDK according to branch
+
+changeset:   88:98c05c588360
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Tue Jun 16 14:44:28 2020 +0300
+summary:     Update libcurl to 7.70.0
+
+changeset:   87:5241da6a701e
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Wed Mar 04 18:19:13 2020 +0200
+summary:     libcurl with openssl and nss and switch it
+
+changeset:   86:33b79bae7da7
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Wed Mar 04 14:25:50 2020 +0200
+summary:     #71295 revert to LIBCURL_VERSION = 7.54.0
+
+changeset:   85:3b83160b9bc5
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Tue Mar 03 18:48:34 2020 +0200
+summary:     fix search jsoncpp in debian x64
+
+changeset:   84:20431a997e8f
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Mon Sep 30 11:58:48 2019 +0300
+summary:     #91234 lost symlink to mkfs.vfat; use internal busybox install.sh to fix - upd
+
+changeset:   83:c9d4c44b6a97
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Mon Sep 30 11:46:32 2019 +0300
+summary:     #91234 lost symlink to mkfs.vfat; use internal busybox install.sh to fix
+
+changeset:   82:969772e4ba86
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Tue Sep 24 20:08:08 2019 +0300
+summary:     Add dosfstools
+
+changeset:   81:ad2ebf3d0757
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Tue Sep 24 17:43:50 2019 +0300
+summary:     Add dosfstools
+
+changeset:   80:667d2b7c881a
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Mon Aug 19 12:06:37 2019 +0300
+summary:     Add json tool to sysroot
+
+changeset:   79:1185d29c3740
+user:        Andrii Bilynets
+date:        Fri Aug 16 21:37:50 2019 +0300
+summary:     add json tool
+
+changeset:   78:726d3bd3f275
+user:        Igor Chumak <igor.chumak@obreey-products.com>
+date:        Fri Aug 16 13:37:50 2019 +0300
+summary:     Обращённый набор изменений: 259aab5a245c
+
+changeset:   77:cdba1f2de193
+user:        Igor Chumak <igor.chumak@obreey-products.com>
+date:        Fri Aug 16 13:37:39 2019 +0300
+summary:     Обращённый набор изменений: fdf452f5f620
+
+changeset:   76:fdf452f5f620
+user:        Igor Chumak <igor.chumak@obreey-products.com>
+date:        Fri Aug 16 13:28:40 2019 +0300
+summary:     Fix busybox links, broken by util-linux
+
+changeset:   75:259aab5a245c
+user:        Igor Chumak <igor.chumak@obreey-products.com>
+date:        Thu Aug 01 11:44:57 2019 +0300
+summary:     #89187 Add sfdisk to toolchain
+
+changeset:   74:ab92e727ebb5
+user:        Igor Chumak <igor.chumak@obreey-products.com>
+date:        Wed Jun 05 18:21:40 2019 +0300
+summary:     Fix typo in opencv build
+
+changeset:   73:75d100470b79
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Fri Mar 01 19:02:01 2019 +0200
+summary:     Use libdatacollector.a from Adobe
+
+changeset:   72:df2cecb430f8
+user:        Igor Chumak <igor.chumak@obreey-products.com>
+date:        Thu Jan 10 12:31:01 2019 +0200
+summary:     Add gtest to SDK
+
+changeset:   71:af7e038df424
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Mon Nov 26 17:23:03 2018 +0200
+summary:     Use PBRES variable in toolhain file
+
+changeset:   70:55dd577d4456
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Mon Nov 26 16:56:29 2018 +0200
+summary:     Fix prev
+
+changeset:   69:2112c49a7e0f
+user:        Igor Chumak <igor.chumak@obreey-products.com>
+date:        Mon Nov 26 15:18:27 2018 +0200
+summary:     Build pbres with SDK
+
+changeset:   68:1eb7e94f9c6e
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Thu Nov 01 19:35:40 2018 +0200
+summary:     Make configs same
+
+changeset:   67:1ac607919d1f
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Wed Oct 31 14:29:59 2018 +0200
+summary:     #77814 add symlink do build qt-5.11
+
+changeset:   66:fc720bb9a8c2
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Tue Oct 30 19:00:17 2018 +0200
+summary:     revert wrong patch
+
+changeset:   65:66ee67316b5a
+user:        Igor Chumak <ichumak@pocketbook.com.ua>
+date:        Tue Oct 30 18:41:57 2018 +0200
+summary:     Expand realpath to compiler in wrapper
+
+changeset:   64:cb8a53ac955e
+user:        igor
+date:        Thu Oct 18 12:17:37 2018 +0300
+summary:     Append libfreebidi to build fbreader
+
+changeset:   63:a37c3fec8594
+user:        Andrii Bilynets <andrii.bilynets@obreey-products.com>
+date:        Fri Oct 05 19:00:44 2018 +0300
+summary:     add libsamplerate
+
+changeset:   62:87a27d3df717
+user:        igor
+date:        Thu Sep 27 13:46:26 2018 +0300
+summary:     Add lsusb to busybox
+
+changeset:   61:c3b1ce36f9f4
+user:        Andrii Bilynets <andrii.bilynets@obreey-products.com>
+date:        Thu Sep 13 11:58:05 2018 +0300
+summary:     add alsaloop tool to build; enhancement #76356
+
+changeset:   60:686fc1f9992d
+user:        igor
+date:        Thu Sep 06 13:17:42 2018 +0300
+summary:     #74998 revert all changes in SDK
+
+changeset:   59:1e1ba3ebf5ef
+user:        igor
+date:        Wed Sep 05 16:16:51 2018 +0300
+summary:     rename config
+
+changeset:   58:93dafa45e404
+user:        igor
+date:        Wed Sep 05 16:05:47 2018 +0300
+summary:     #76414 added buildroot-2017.05/configs/pb_a13_config
+
+changeset:   57:d8389baba62f
+parent:      56:196dc77ab5b6
+parent:      55:60a9abf1160a
+user:        igor
+date:        Fri Aug 31 11:38:54 2018 +0300
+summary:     merge
+
+changeset:   56:196dc77ab5b6
+parent:      53:e90b64112d5a
+user:        igor
+date:        Fri Aug 31 11:37:56 2018 +0300
+summary:     Enable LAME, GPL and non-free in ffmpeg
+
+changeset:   55:60a9abf1160a
+user:        igor
+date:        Thu Aug 30 16:53:04 2018 +0300
+summary:     #74998 add libopenh64
+
+changeset:   54:fd1b71d28acb
+user:        igor
+date:        Thu Aug 30 10:45:01 2018 +0300
+summary:     #74998 webp --enable-libwebpmux
+
+changeset:   53:e90b64112d5a
+user:        igor
+date:        Wed Aug 29 19:30:16 2018 +0300
+summary:     #74998 enable webp-demux
+
+changeset:   52:3274d2439475
+user:        igor
+date:        Wed Aug 29 18:38:33 2018 +0300
+summary:     #74998 enable opus and webp
+
+changeset:   51:a53f5252aa51
+user:        Igor Chumak
+date:        Tue Aug 28 15:05:00 2018 +0000
+summary:     #76216 fix patch
+
+changeset:   50:4e4fb780cb81
+user:        Igor Chumak
+date:        Tue Aug 28 14:34:02 2018 +0000
+summary:     #76216 patch jpegturbo ; use ycck_gray_convert
+
+changeset:   49:49ff706a3bf2
+user:        Igor Chumak
+date:        Tue Aug 14 11:43:39 2018 +0000
+summary:     #76197 add -DNDEBUG only to alsa-lib
+
+changeset:   48:ce57904cfa5e
+user:        Igor Chumak
+date:        Tue Aug 14 10:38:19 2018 +0000
+summary:     #76197 add -DNDEBUG globally
+
+changeset:   47:91d0529a93d4
+user:        Denis Kuzko
+date:        Fri Aug 03 12:17:45 2018 +0000
+summary:     Add "FindBluetoothConfigurator.cmake"
+
+changeset:   46:480468280e45
+user:        igor
+date:        Fri Jul 20 10:35:09 2018 +0300
+summary:     add link to llvm-ar
+
+changeset:   45:78f5cb2d37a9
+user:        igor
+date:        Tue Jul 17 12:27:29 2018 +0300
+summary:     Calculate md5sum too
+
+changeset:   44:47e0fa99d07e
+user:        igor
+date:        Tue Jul 17 12:02:54 2018 +0300
+summary:     Cleanup toolchain dir
+
+changeset:   43:b53a3cd08615
+user:        igor
+date:        Mon Jul 16 12:38:12 2018 +0300
+summary:     rename FindAdobeRMSDK.cmake to FindAdobeRMSDK_sysroot.cmake
+
+changeset:   42:014ca1769725
+user:        igor
+date:        Fri Jul 13 20:01:43 2018 +0300
+summary:     changed SDK-TEMPLATE/usr/share/cmake/modules/FindPBCrypto.cmake; used static library
+
+changeset:   41:08fb1853204b
+user:        igor
+date:        Fri Jul 13 19:40:28 2018 +0300
+summary:     added SDK-TEMPLATE/usr/share/cmake/modules/FindPBCrypto.cmake
+
+changeset:   40:bcc3fbee1c8d
+user:        igor
+date:        Fri Jul 13 18:54:31 2018 +0300
+summary:     : added SDK-TEMPLATE/usr/share/cmake/modules/FindAdobeRMSDK.cmake
+
+changeset:   39:664f67ff3978
+user:        Igor Chumak
+date:        Fri Jul 06 13:18:10 2018 +0000
+summary:     install wget to staging dir
+
+changeset:   38:a07ab954b0fd
+parent:      37:bb13ab7608db
+parent:      36:7613dad69712
+user:        Igor Chumak
+date:        Fri Jul 06 12:48:14 2018 +0000
+summary:     merge
+
+changeset:   37:bb13ab7608db
+parent:      35:04740db962d2
+user:        Igor Chumak
+date:        Fri Jul 06 12:46:43 2018 +0000
+summary:     Exclude wget from busybox
+
+changeset:   36:7613dad69712
+user:        igor
+date:        Fri Jul 06 14:15:34 2018 +0300
+summary:     Copy gdb to SDK
+
+changeset:   35:04740db962d2
+user:        Igor Chumak
+date:        Thu Jul 05 14:42:58 2018 +0000
+summary:     Re-configure gdb
+
+changeset:   34:fe78b5643aba
+user:        Igor Chumak
+date:        Thu Jul 05 14:31:08 2018 +0000
+summary:     copy zmodem files to  STAGING_DIR
+
+changeset:   33:340134cd506e
+user:        Igor Chumak
+date:        Tue Jul 03 08:47:38 2018 +0000
+summary:     add BR2_PACKAGE_LRZSZ
+
+changeset:   32:1a298741e50c
+user:        Andrii Bilynets <andrii.bilynets@obreey-products.com>
+date:        Fri Jun 29 18:59:26 2018 +0300
+summary:     integrate blualsa library; develop #74507
+
+changeset:   31:63a24c2d6f20
+user:        Andrii Bilynets <andrii.bilynets@obreey-products.com>
+date:        Wed Jun 20 15:46:56 2018 +0300
+summary:     fix ffmpeg libs
+
+changeset:   30:f80a414e8487
+user:        Andrii Bilynets <andrii.bilynets@obreey-products.com>
+date:        Tue Jun 12 18:18:15 2018 +0300
+summary:     add libraries: sbc and bluez5 stack to sdk b288; develop #74508; develop #74502
+
+changeset:   29:dd9f9bc21107
+user:        Andrii Bilynets <andrii.bilynets@obreey-products.com>
+date:        Tue Jun 12 18:14:48 2018 +0300
+summary:     take output dir by config name if it is omited; develop #74081
+
+changeset:   28:bbb9a80d70f3
+user:        Andrii Bilynets <andrii.bilynets@obreey-products.com>
+date:        Tue Jun 12 18:12:07 2018 +0300
+summary:     using auto detection of quantity build threads; develop #74081
+
+changeset:   27:bfe601dcfae6
+user:        Igor Chumak
+date:        Sat Jun 09 05:28:13 2018 +0000
+summary:     fix empty dirs
+
+changeset:   26:a76f4d8db61d
+user:        Igor Chumak
+date:        Fri Jun 08 17:21:02 2018 +0200
+summary:     Try build with -j8
+
+changeset:   25:4a2e364d493b
+user:        Igor Chumak
+date:        Fri Jun 08 14:17:55 2018 +0000
+summary:     run make all
+
+changeset:   24:5dbbcbb85bc1
+user:        Igor Chumak
+date:        Fri Jun 08 12:44:23 2018 +0000
+summary:     Remove configs
+
+changeset:   23:566110648146
+user:        Igor Chumak
+date:        Fri Jun 08 09:34:32 2018 +0000
+summary:     Force build busybox
+
+changeset:   22:cde28022fb25
+parent:      21:cf52b5683ee2
+parent:      20:33c1f9e9fa32
+user:        Igor Chumak
+date:        Fri Jun 08 08:24:18 2018 +0000
+summary:     branch merge
+
+changeset:   21:cf52b5683ee2
+parent:      18:2dea2d1c3bd4
+user:        Igor Chumak
+date:        Fri Jun 08 08:16:13 2018 +0000
+summary:     Use defconfig inst copy
+
+changeset:   20:33c1f9e9fa32
+user:        igor
+date:        Thu Jun 07 15:43:20 2018 +0300
+summary:     Remove odd patches
+
+changeset:   19:9ddc48641697
+user:        igor
+date:        Thu Jun 07 15:07:04 2018 +0300
+summary:     Remove wrong patches
+
+changeset:   18:2dea2d1c3bd4
+user:        igor
+date:        Thu Jun 07 12:25:42 2018 +0300
+summary:     fix p7 build && prepare script
+
+changeset:   17:0c6c4ac911ef
+user:        igor
+date:        Thu Jun 07 11:14:12 2018 +0300
+summary:     Upd download packages to shared dir
+
+changeset:   16:3eb55f661042
+user:        igor
+date:        Thu Jun 07 11:02:56 2018 +0300
+summary:     Remove old files
+
+changeset:   15:4f3d713e9a33
+user:        igor
+date:        Thu Jun 07 11:00:21 2018 +0300
+summary:     Patch buildroot source
+
+changeset:   14:6b0b7c1fd6f0
+user:        igor
+date:        Thu Jun 07 10:59:20 2018 +0300
+summary:     Add original buildroot source
+
+changeset:   13:e7c408bb2379
+user:        igor
+date:        Thu Jun 07 10:57:52 2018 +0300
+summary:     Pack SDK to tar.gz
+
+changeset:   12:3abab55c6f16
+user:        Igor Chumak
+date:        Wed Jun 06 14:49:53 2018 +0000
+summary:     Enable p7 for build
+
+changeset:   11:a2e9ac7e870b
+user:        Igor Chumak
+date:        Wed Jun 06 14:48:05 2018 +0000
+summary:     Build p7 logger as external package
+
+changeset:   10:34dc08d4a7c8
+parent:      9:ced4a855993e
+parent:      8:ce24c6229f1c
+user:        Igor Chumak
+date:        Wed Jun 06 10:30:21 2018 +0000
+summary:     branch merge
+
+changeset:   9:ced4a855993e
+parent:      7:d95eaff68c8a
+user:        Igor Chumak
+date:        Wed Jun 06 10:28:32 2018 +0000
+summary:     Fix build openssl
+
+changeset:   8:ce24c6229f1c
+user:        Andrii Bilynets <andrii.bilynets@obreey-products.com>
+date:        Tue Jun 05 19:47:21 2018 +0300
+summary:     add ffmpeg building
+
+changeset:   7:d95eaff68c8a
+user:        Igor Chumak
+date:        Tue Jun 05 16:04:07 2018 +0000
+summary:     Copy busybox to SDK
+
+changeset:   6:6a46965c3c97
+user:        Igor Chumak
+date:        Tue Jun 05 15:11:57 2018 +0000
+summary:     upd busybox again
+
+changeset:   5:b5d8b7331a3d
+user:        Igor Chumak
+date:        Tue Jun 05 16:54:00 2018 +0200
+summary:     Upd busybox
+
+changeset:   4:0ea9273e11d9
+user:        Igor Chumak
+date:        Tue Jun 05 14:17:20 2018 +0000
+summary:     Fix PB_STRIP; add empty folders
+
+changeset:   3:89619d088936
+user:        Igor Chumak
+date:        Mon Jun 04 15:35:51 2018 +0000
+summary:     Fix install clang to SDK
+
+changeset:   2:f973e6826912
+user:        Igor Chumak
+date:        Mon Jun 04 16:50:02 2018 +0200
+summary:     Fix build; use clang
+
+changeset:   1:8a439906243e
+user:        Igor Chumak
+date:        Mon Jun 04 08:43:34 2018 +0000
+summary:     build boost
+
+changeset:   0:1e2ad3140632
+user:        Igor Chumak
+date:        Thu May 31 11:22:15 2018 +0000
+summary:     1-st commit
+
